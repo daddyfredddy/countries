@@ -9,17 +9,17 @@ export default function Countries() {
   const { darkTheme, themeHandler } = useContext(ThemeContext);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchCountries = async () => {
       try {
-        const response = await fetch("/data.json");
+        const response = await fetch("https://restcountries.com/v3.1/all");
         const data = await response.json();
-        setCountries(data.slice(0, 10));
+        setCountries(data.slice(0, 20));
       } catch (error) {
-        console.error("Error fetching data:");
+        console.error("Error fetching data");
       }
     };
 
-    fetchData();
+    fetchCountries();
   }, []);
 
   return (

@@ -8,7 +8,7 @@ export default function Article({ flags, name, population, region, capital }) {
 
   return (
     <>
-      <Link to={`/${name}`}>
+      <Link to={`/${name.common}`}>
         <article
           className={
             darkTheme
@@ -29,7 +29,7 @@ export default function Article({ flags, name, population, region, capital }) {
                   : "font-fonty font-extrabold text-2xl text-vdblue1 mb-2"
               }
             >
-              {name}
+              {name.common}
             </h2>
             <ul>
               <li

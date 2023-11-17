@@ -8,11 +8,12 @@ module.exports = {
         "vdblue": "hsl(207, 26%, 17%)",
         "vdblue1": "hsl(200, 15%, 8%)",
         "dgray": "hsl(200, 15%, 8%)",
-        "vlgray": "hsl(0, 0%, 98%)",
+        "vlgray": "hsl(0, 0%, 95%)",
         "white": "hsl(0, 0%, 100%)",
         "kalas1": "#C4C4C4",
         "kalas2": "#B2B2B2",
-        "kalas3": "#979797"
+        "kalas3": "#979797",
+        "kalas4": "#111517",
       }
     },
     fontFamily: {
