@@ -1,10 +1,10 @@
 import React from "react";
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "./ContextTheme";
 import { Link } from "react-router-dom";
 
 export default function Article({ flags, name, population, region, capital }) {
-  const { darkTheme, themeHandler } = useContext(ThemeContext);
+  const { darkTheme } = useContext(ThemeContext);
 
   return (
     <>

@@ -14,6 +14,7 @@ module.exports = {
         "kalas2": "#B2B2B2",
         "kalas3": "#979797",
         "kalas4": "#111517",
+        "kalas5": "#848484"
       }
     },
     fontFamily: {

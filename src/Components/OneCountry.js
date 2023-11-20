@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function OneCountry() {
   const [country, setCountry] = useState([]);
@@ -17,10 +17,17 @@ export default function OneCountry() {
     };
     getSingleCountry();
   }, [name]);
+
   return (
     <>
-      <Link to="/"></Link>
       <section className="p-8 md:py-0 max-w-7xl mx-auto bg-vlgray">
+        <Link
+          to="/"
+          className="font-fonty text-kalas4 text-base font-light p-4 my-11 shadow-lg bg-red-50"
+        >
+          &larr; Back
+        </Link>
+
         {country.map((item) => (
           <div
             key={item.population}
@@ -44,7 +51,7 @@ export default function OneCountry() {
                   </ul>
                   <ul className="font-fonty text-base text-kalas4 mt-4 flex flex-col items-start justify-start gap-2">
                     <li>Top Level Domain:{item.tld}</li>
-                    {/* <li>Currencies:{item.currencies}</li> */}
+                    {/* <li>Currencies: {item.currency}</li> */}
                     {/* <li>Languages:{item.languages} </li> */}
                   </ul>
                 </div>
